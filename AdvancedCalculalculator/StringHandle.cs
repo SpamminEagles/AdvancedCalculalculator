@@ -10,9 +10,28 @@ namespace AdvancedCalculator
         {
         }
 
-        public static void QuickLaunch(string input)
+        public static int QuickLaunch(string input)
         {
-            StringHandle
+            StringHandle sh = new StringHandle();
+            input = sh.Correct(input);
+            sh.Validate(input);
+
+            string[] A = sh.ReduceExpressions(sh.Partition(input));
+            
+            return 0;   //To be removed
+        }
+
+        public string[] ReduceExpressions(string[] input)
+        {
+            for (int i = 0; i < input.Length; i++)
+            {
+                if (input[i].Length > 2)
+                {
+                    input[i] = "e" + QuickLaunch(input[i].Substring(1));
+                }
+            }
+
+            return input;
         }
 
         //Correcting all it can / should
