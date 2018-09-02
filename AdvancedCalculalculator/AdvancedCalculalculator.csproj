@@ -43,7 +43,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayLib.cs" />
-    <Compile Include="DynamicArray.cs" />
     <Compile Include="Maths.cs" />
     <Compile Include="Prog.cs" />
     <Compile Include="Program.cs" />
