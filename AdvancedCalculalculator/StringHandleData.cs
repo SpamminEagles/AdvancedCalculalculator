@@ -13,14 +13,7 @@ namespace AdvancedCalculator
             {0, "Error 0: Operator overflow" },
 
             //Not closed/Not opened parantheses
-            {1, "Error 1: Broken parantheses" },
-
-            //Speaks for itself
-            {2, "Error 2: Invalid character" }
+            {1, "Error 1: Broken parantheses" }
         };
-
-
-        enum PartitionStatus { None,  Number, Paranthese};
-        public enum ElementType { Number, Operator, Parantheses, None};
     }
 }

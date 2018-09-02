@@ -30,13 +30,5 @@ namespace AdvancedCalculator
 
             return cnt;
         }
-
-        public static void PrintToConsole(string[] arr)
-        {
-            foreach (string i in arr)
-            {
-                Console.WriteLine(i);
-            }
-        }
     }
 }
