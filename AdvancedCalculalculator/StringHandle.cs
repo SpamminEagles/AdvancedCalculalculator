@@ -10,6 +10,11 @@ namespace AdvancedCalculator
         {
         }
 
+        public static void QuickLaunch(string input)
+        {
+            StringHandle
+        }
+
         //Correcting all it can / should
         public string Correct(string par)
         {
