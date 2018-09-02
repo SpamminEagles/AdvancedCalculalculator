@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ConsoleApp1
+namespace AdvancedCalculator
 {
     
     public static class Maths
@@ -52,17 +52,25 @@ namespace ConsoleApp1
 
 
         public static double Divide(double a, double b)
-        {
+        {   
+            if(b == 0)
+                Prog.ThrowError(3);
             return a / b;
         }
         public static float Divide(float a, float b)
-        {
+        {   
+            if(b == 0)
+                Prog.ThrowError(3);
             return a / b;
         }
 
 
         public static int Factorial(int a)
         {   
+            if(a<0)
+                Prog.ThrowError(6);
+            if(a != (int)a)
+                Prog.ThrowError(7);
             if (a == 0)
                 return 1;
             else
@@ -86,6 +94,8 @@ namespace ConsoleApp1
 
         public static double Sqr(int a)
         {   
+            if(a < 0)
+                Prog.ThrowError(4);
             double guess = 1;
             while (guess*guess <= a)
             {
@@ -117,11 +127,15 @@ namespace ConsoleApp1
 
 
         public static double Reciprocal(double a)
-        {
+        {   
+            if(a==0)
+                Prog.ThrowError(5);
             return 1 / a;
         }
         public static float Reciprocal(float a)
-        {
+        {   
+            if(a==0)
+                Prog.ThrowError(5);
             return 1 / a;
         }
 
